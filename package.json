@@ -11,10 +11,9 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@emotion/react": "^11.11.4",
-    "@emotion/styled": "^11.11.0",
-    "@mui/icons-material": "^5.15.11",
-    "@mui/material": "^5.15.11",
+    "@mui/icons-material": "^6.0.0-beta.6",
+    "@mui/material": "^6.0.0-beta.6",
+    "@mui/material-pigment-css": "^6.0.0-beta.6",
     "@remix-run/node": "2.8.0",
     "@remix-run/react": "2.8.0",
     "@remix-run/serve": "2.8.0",
@@ -23,6 +22,7 @@
     "react-dom": "18.3.0-canary-01ab35a9a-20240228"
   },
   "devDependencies": {
+    "@pigment-css/vite-plugin": "^0.0.20",
     "@remix-run/dev": "2.8.0",
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
