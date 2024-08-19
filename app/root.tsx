@@ -1,4 +1,3 @@
-import { ThemeProvider } from "@emotion/react";
 import {
   Links,
   Meta,
@@ -8,8 +7,9 @@ import {
   isRouteErrorResponse,
   useRouteError,
 } from "@remix-run/react";
-import theme from "./theme";
-import { Box, CssBaseline, Typography } from "@mui/material";
+import { CssBaseline, Typography } from "@mui/material";
+
+import "@mui/material-pigment-css/styles.css";
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -20,11 +20,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body suppressHydrationWarning>
-        <ThemeProvider theme={theme}>
-          <CssBaseline />
-          {children}
-        </ThemeProvider>
+      <body>
+        <CssBaseline />
+        {children}
         <ScrollRestoration />
         <Scripts />
       </body>
@@ -42,10 +40,10 @@ export function ErrorBoundary() {
     ? error.data
     : (error as Error).message;
   return (
-    <Box sx={{ m: 4 }}>
+    <div sx={{ m: 4 }}>
       <Typography variant="h4" component="h1" sx={{ mb: 2 }} color="red">
         {message ?? "An error occurred"}
       </Typography>
-    </Box>
+    </div>
   );
 }
