@@ -31,13 +31,6 @@ const pigmentConfig = {
 };
 
 export default defineConfig({
-  optimizeDeps: {
-    include: [
-      "@mui/material",
-      "@pigment-css/react",
-      "@mui/material-pigment-css",
-    ],
-  },
   ssr: {
     noExternal: ["@mui/**", "@pigment-css/**"],
   },

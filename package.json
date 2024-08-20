@@ -22,7 +22,6 @@
     "react-dom": "18.3.0-canary-01ab35a9a-20240228"
   },
   "devDependencies": {
-    "@pigment-css/react": "^0.0.20",
     "@pigment-css/vite-plugin": "^0.0.20",
     "@remix-run/dev": "2.8.0",
     "@types/react": "^18.2.20",
