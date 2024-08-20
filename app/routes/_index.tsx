@@ -1,4 +1,4 @@
-import { Container, Typography, Link } from "@mui/material";
+import { Container, Typography, Link, Button, TextField } from "@mui/material";
 // import Stack from "@mui/material-pigment-css/Stack";
 import type { MetaFunction } from "@remix-run/node";
 import ProTip from "~/components/ProTip";
@@ -19,6 +19,10 @@ export default function Index() {
           Remix + MUI + Vite Example
         </Typography>
         <ProTip />
+        <TextField label="Text Field" />
+        <Button variant="contained" color="primary">
+          Hello World
+        </Button>
         <RemixLink to="/error">Test Error Boundary</RemixLink>
         <Copyright />
       </div>
