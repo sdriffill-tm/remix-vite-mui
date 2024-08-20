@@ -1,4 +1,5 @@
 import { Container, Typography, Link } from "@mui/material";
+// import Stack from "@mui/material-pigment-css/Stack";
 import type { MetaFunction } from "@remix-run/node";
 import ProTip from "~/components/ProTip";
 import { Link as RemixLink } from "@remix-run/react";
@@ -12,6 +13,7 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <Container maxWidth="sm">
+      {/* <Stack sx={{ my: 4 }} spacing={2}> */}
       <div sx={{ my: 4 }}>
         <Typography variant="h4" component="h1" sx={{ mb: 2 }} color="primary">
           Remix + MUI + Vite Example
@@ -20,6 +22,7 @@ export default function Index() {
         <RemixLink to="/error">Test Error Boundary</RemixLink>
         <Copyright />
       </div>
+      {/* </Stack> */}
     </Container>
   );
 }
