@@ -11,9 +11,9 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@mui/icons-material": "^6.0.0-beta.6",
-    "@mui/material": "^6.0.0-beta.6",
-    "@mui/material-pigment-css": "^6.0.0-beta.6",
+    "@mui/icons-material": "^6.0.0",
+    "@mui/material": "^6.0.0",
+    "@mui/material-pigment-css": "^6.0.0",
     "@remix-run/node": "2.8.0",
     "@remix-run/react": "2.8.0",
     "@remix-run/serve": "2.8.0",
