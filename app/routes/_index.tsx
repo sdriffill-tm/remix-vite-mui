@@ -1,4 +1,6 @@
-import { Container, Typography, Link, Button, TextField } from "@mui/material";
+import { Typography, Link, Button, TextField } from "@mui/material";
+import Container from "@mui/material-pigment-css/Container";
+
 // import Stack from "@mui/material-pigment-css/Stack";
 import type { MetaFunction } from "@remix-run/node";
 import ProTip from "~/components/ProTip";
