@@ -47,6 +47,9 @@ module.exports = {
           typescript: {},
         },
       },
+      rules: {
+        "react/no-unknown-property": ["error", { ignore: "sx" }],
+      },
     },
 
     // Typescript
